@@ -1,56 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
-    text-align: center;
+    color: #222;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 950px;
     margin: 40px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 14px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.10);
+    text-align: center;
 }
 
 h1 {
+    margin: 0 0 15px;
+    font-size: 52px;
     color: #e60000;
-    margin-bottom: 10px;
 }
 
-p {
-    font-size: 16px;
-    margin: 5px 0;
+.subtitle {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.address {
+    font-size: 18px;
+    margin: 0 0 25px;
 }
 
 .images {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 16px;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 .images img {
-    width: 45%;
-    max-width: 260px;
+    width: 100%;
+    max-width: 340px;
     border-radius: 12px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
 .buttons {
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .button {
     display: inline-block;
-    margin: 8px;
-    padding: 12px 18px;
+    padding: 14px 20px;
+    border-radius: 10px;
     color: white;
     text-decoration: none;
-    border-radius: 8px;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .call {
@@ -63,4 +77,20 @@ p {
 
 .location {
     background-color: #007bff;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .subtitle,
+    .address {
+        font-size: 16px;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 320px;
+    }
 }
